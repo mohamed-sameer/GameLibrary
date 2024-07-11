@@ -5,6 +5,7 @@ this app is made with
 - html
 - css
 - JavaScipt
+- tailwind css
 
 i used OOP approach when creating this app
 
