@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Library</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="src/css/output.css" />
+  </head>
+  <body class="overflow-hidden">
+    <!--  -->
+    <header id="header" class="bg-gradient-image-1 pb-10">
+      <div class="h-28"></div>
+      <div class="container mx-auto">
+        <nav
+          class="bg-[#3A497B] text-white rounded-3xl w-3/4 m-auto flex justify-between items-center px-5 py-3"
+        >
+          <div>
+            <h1 class="flex justify-start items-center gap-3 font-cursive">
+              <img class="w-10" src="src/images/logo-sm.png" alt="game logo" />
+              <a href="#">GAME REVIEWS </a>
+            </h1>
+          </div>
+          <div>
+            <div class="flex flex-col gap-1 cursor-pointer lg:hidden">
+              <span class="bg-slate-800 w-9 h-[3px] rounded-full"></span>
+              <span class="bg-slate-800 w-9 h-[3px] rounded-full"></span>
+              <span class="bg-slate-800 w-9 h-[3px] rounded-full"></span>
+            </div>
+            <ul
+              id="navbar"
+              class="hidden gap-3 font-cursive text-sm lg:flex lg:justify-center lg:items-center"
+            >
+              <li
+                class="cursor-pointer hover:text-[#0099CC] transition duration-300 active"
+              >
+                MMORPG
+              </li>
+              <li
+                class="cursor-pointer hover:text-[#0099CC] transition duration-300"
+              >
+                SHOOTER
+              </li>
+              <li
+                class="cursor-pointer hover:text-[#0099CC] transition duration-300"
+              >
+                SAILING
+              </li>
+              <li
+                class="cursor-pointer hover:text-[#0099CC] transition duration-300"
+              >
+                PERMADEATH
+              </li>
+              <li
+                class="cursor-pointer hover:text-[#0099CC] transition duration-300"
+              >
+                SUPERHERO
+              </li>
+              <li class="cursor-pointer hover:text-[#0099CC] transition-all">
+                PIXEL
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="gameSecion" class=" ">
+        <div class="container mx-auto py-5">
+          <div
+            id="gameCards"
+            class="grid gap-4 md:grid-cols-2 lg:grid-cols-4"
+          ></div>
+        </div>
+      </section>
+      <section
+        id="gameDetails"
+        class="bg-[#272b30] text-white z-50 absolute top-0 left-0 bottom-0 right-0 py-5 px-20"
+      >
+        <div class="container mx-auto">
+          <div class="head flex justify-between items-center py-5 mb-5">
+            <h1 class="text-3xl">Game Details</h1>
+            <button class="text-xl btn-close">
+              <span>x</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="spinner">
+      <span class="loader"></span>
+    </div>
+    <!-- main js -->
+    <script src="src/js/index.js" type="module"></script>
+  </body>
+</html>
